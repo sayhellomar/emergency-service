@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Hotline</title>
+
+    <!-- Daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Style CSS -->
+     <link rel="stylesheet" href="./style.css">
+</head>
+<body class="antialiased">
+
+    <!-- ===================== Header ================== -->
+
+    <header id="header" class="py-6">
+        <div class="w-[1800px] mx-auto">
+            <div class="header-inner flex justify-between items-center">
+                <div class="header-left flex items-center gap-2">
+                    <img class="w-[50px] h-[50px]" src="./images/logo.png" alt="Emergency Service Directory">
+                    <h3 class="hind-madurai-bold text-2xl leading-none text-[#006747]">Emergency<br>Service</h3>
+                </div><!-- .header-left -->
+
+                <div class="header-right flex gap-5">
+                    <div class="heart bg-[#41ff6b1a] rounded-full px-[35px] py-[11px] flex gap-2 items-center">
+                        <div id="heart-count" class="inter-black">0</div>
+                        <img class="w-[30px] h-[30px]" src="./images/heart.png" alt="Heart Icon">
+                    </div>
+                    <div class="coin bg-[#41ff6b1a] rounded-full px-[35px] py-[11px] flex gap-2 items-center">
+                        <div id="coin-count" class="inter-black">100</div>
+                        <img class="w-[30px] h-[30px]" src="./images/coin.png" alt="Coin Icon">
+                    </div>
+                    <div class="copy bg-[#00a63e] rounded-full px-[35px] py-[11px] text-white flex gap-2 items-center">
+                        <p class="inter-semibold"><span id="copy-count">2</span> Copy</p>
+                    </div>
+                </div><!-- .header-right -->
+            </div>
+        </div>
+    </header>
+
+    <main id="main">
+
+        <!-- ===================== Banner ================== -->
+
+        <section id="banner" class="py-5">
+            <div class="w-[1800px] mx-auto">
+                <div class="banner-inner text-white text-center">
+                    <img class="mx-auto w-[92px] h-[92px]" src="./images/logo-dark.png" alt="Logo Dark">
+                    <h1 class="my-3 hind-madurai-bold text-[40px]">Emergency Service Directory</h1>
+                    <p class="hind-madurai-semibold text-xl">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="emergency-lists-container">
+
+            <!-- ===================== Emergency Lists ================== -->
+
+            <section id="emergency-lists">
+
+            </section>
+
+            <!-- ===================== Call History ================== -->
+
+            <aside id="call-history">
+
+            </aside>
+        </section>
+    </main>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
