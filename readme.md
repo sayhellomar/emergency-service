@@ -21,9 +21,11 @@ document.appendChild(div);
 3. What is **Event Bubbling** and how does it work?
 
 **Answer: Event Bubbling** is a JavaScript machanism which is related to an event. When an event occurs, JavaScript first try to capture the event from top to bottom and when capturing phase found the triggered element then it goes to top from bottom and it's called **Event Bubbling**
+
 4. What is **Event Delegation** in JavaScript? Why is it useful?
 
 **Answer: Event Delegation** is a technique, which developers use using event bubbling mechanism. Generally, an event hooked into it's parent element instead of child element and get the target element to do something. It's useful to reduce multiple event, can target the element which was not on the DOM initially. Also, useful for organized code & future maintenance.
+
 5. What is the difference between **preventDefault() and stopPropagation()** methods?
 
 **Answer:** **preventDefault()** stops the default behavior of forms, buttons or anchor where **stopPropagation()** use to stop default machanism of event bubbling.

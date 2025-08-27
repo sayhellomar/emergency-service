@@ -17,7 +17,8 @@ function callFeature() {
             
             if(coinCount.innerText >= 20) {
                 coinCount.innerText = coinCount.innerText - 20;
-                alert(`Calling ${helplineService} ${helplineNumber}`);
+                const callIcon = `<span><i class="fa-solid fa-phone-volume"></i></span>`;
+                alert(`🕻 Calling ${helplineService} ${helplineNumber}...`);
                 callHistoryWrapper.innerHTML += `
                     <div class="single-call-history flex gap-4 justify-between items-center bg-[#fafafa] rounded-lg p-4 mb-2">
                         <div>
@@ -28,7 +29,7 @@ function callFeature() {
                     </div>
                 `;
             } else {
-                alert('You don\'t have enough coins');
+                alert('❌ You don\'t have enough coins to make call. At least 20 coins need to call.');
             }
         })
     }
