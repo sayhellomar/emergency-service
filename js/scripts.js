@@ -16,9 +16,8 @@ function callFeature() {
             const helplineNumber    = callBtn.parentNode.parentNode.querySelector('.helpline-number').innerText;
             
             if(coinCount.innerText >= 20) {
-                coinCount.innerText = coinCount.innerText - 20;
-                const callIcon = `<span><i class="fa-solid fa-phone-volume"></i></span>`;
-                alert(`🕻 Calling ${helplineService} ${helplineNumber}...`);
+                coinCount.innerText -= 20;
+                alert(`Calling ${helplineService} ${helplineNumber}...`);
                 callHistoryWrapper.innerHTML += `
                     <div class="single-call-history flex gap-4 justify-between items-center bg-[#fafafa] rounded-lg p-4 mb-2">
                         <div>
@@ -48,6 +47,7 @@ function getHeartCount() {
 function getCopiedCount() {
     for(const copyBtn of copyBtns) {
         copyBtn.addEventListener('click', function() {
+            alert('Hotline number copied to clipboard.');
             // Increase copy counter button by 1
             copyCount.innerText++;
 
@@ -73,4 +73,4 @@ historyClearBtn.addEventListener('click', function() {
 // Function invoked
 callFeature();
 getHeartCount();
-getCopiedCount()
+getCopiedCount();
