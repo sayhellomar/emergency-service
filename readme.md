@@ -4,11 +4,11 @@
 
 **Answer:** 
 
-    - By **getElementById**, we can select a specific element from the DOM with the id.
-    - Using **getElementsByClassName**, we can get all elements of the DOM which are matched with specific class.
-    - We use **querySelector**, when we want to select the first element from the DOM whether it's a class or id.
-    - With **querySelectorAll**, we can get all the elements of the DOM which are matched whether it's a class or id, but it's a good practice to make id unique. We generally use **querySelectorAll** to select classes.
-    
+    - By getElementById, we can select a specific element from the DOM with the id.
+    - Using getElementsByClassName, we can get all elements of the DOM which are matched with specific class.
+    - We use querySelector, when we want to select the first element from the DOM whether it's a class or id.
+    - With querySelectorAll, we can get all the elements of the DOM which are matched whether it's a class or id, but it's a good practice to make id unique. We generally use querySelectorAll to select classes.
+
 **getElementsByClassName** returns an HTMLCollection where **querySelectorAll** returns a NodeList.
 
 2. How do you **create and insert a new element into the DOM**?
