@@ -15,24 +15,24 @@
 
     <!-- ===================== Header ================== -->
 
-    <header id="header" class="py-6">
-        <div class="w-[1800px] mx-auto">
-            <div class="header-inner flex justify-between items-center">
-                <div class="header-left flex items-center gap-2">
+    <header id="header" class="py-6 px-6 2xl:px-0">
+        <div class="max-w-[1800px] mx-auto">
+            <div class="header-inner flex justify-between items-center flex-col md:flex-row">
+                <div class="header-left flex items-center gap-2 mb-4 md:mb-0">
                     <img class="w-[50px] h-[50px]" src="./images/logo.png" alt="Emergency Service Directory">
-                    <h3 class="hind-madurai-bold text-2xl leading-none text-[#006747]">Emergency<br>Service</h3>
+                    <h3 class="hind-madurai-bold text-2xl leading-none text-[#006747]">Emergency <br class="hidden md:block">Service</h3>
                 </div><!-- .header-left -->
 
-                <div class="header-right flex gap-5">
-                    <div class="heart bg-[#41ff6b1a] rounded-full px-[35px] py-[11px] flex gap-2 items-center">
+                <div class="header-right flex gap-2 md:gap-5">
+                    <div class="heart bg-[#41ff6b1a] rounded-full px-6 md:px-[35px] py-3 md:py-[11px] flex gap-2 items-center">
                         <div id="heart-count" class="inter-black">0</div>
                         <img class="w-[30px] h-[30px]" src="./images/heart.png" alt="Heart Icon">
                     </div>
-                    <div class="coin bg-[#41ff6b1a] rounded-full px-[35px] py-[11px] flex gap-2 items-center">
+                    <div class="coin bg-[#41ff6b1a] rounded-full px-6 md:px-[35px] py-3 md:py-[11px] flex gap-2 items-center">
                         <div id="coin-count" class="inter-black">100</div>
                         <img class="w-[30px] h-[30px]" src="./images/coin.png" alt="Coin Icon">
                     </div>
-                    <div class="copy bg-[#00a63e] rounded-full px-[35px] py-[11px] text-white flex gap-2 items-center">
+                    <div class="copy bg-[#00a63e] rounded-full px-6 md:px-[35px] py-3 md:py-[11px] text-white flex gap-2 items-center">
                         <p class="inter-semibold"><span id="copy-count">0</span> Copy</p>
                     </div>
                 </div><!-- .header-right -->
@@ -44,8 +44,8 @@
 
         <!-- ===================== Banner ================== -->
 
-        <section id="banner" class="py-5">
-            <div class="w-[1800px] mx-auto">
+        <section id="banner" class="py-5 px-6 2xl:px-0">
+            <div class="max-w-[1800px] mx-auto">
                 <div class="banner-inner text-white text-center">
                     <img class="mx-auto w-[92px] h-[92px]" src="./images/logo-dark.png" alt="Logo Dark">
                     <h1 class="my-3 hind-madurai-bold text-[40px]">Emergency Service Directory</h1>
@@ -54,11 +54,11 @@
             </div>
         </section>
 
-        <section id="emergency-lists-container" class="bg-[#f5fff6]">
-            <div class="w-[1800px] mx-auto">
+        <section id="emergency-lists-container" class="bg-[#f5fff6] px-6 2xl:px-0">
+            <div class="max-w-[1800px] mx-auto">
                 <div class="emergency-lists-container grid grid-cols-12 gap-7 pt-12 pb-22">
                     <!-- ===================== Emergency Lists ================== -->
-                    <section id="emergency-lists" class="col-span-9 grid grid-cols-3 gap-7">
+                    <section id="emergency-lists" class="order-2 lg:order-1 col-span-12 lg:col-span-8 xl:col-span-9 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-7">
 
                         <div class="emergency-list shadow-sm bg-white rounded-xl p-8">
                             <div class="flex justify-between items-center mb-4">
@@ -199,7 +199,7 @@
                     </section>
 
                     <!-- ===================== Call History ================== -->
-                    <aside id="call-history" class="col-span-3 bg-white rounded-xl p-6 shadow-sm">
+                    <aside id="call-history" class="order-1 lg:order-2 col-span-12 lg:col-span-4 xl:col-span-3 bg-white rounded-xl p-6 shadow-sm">
                         <div class="call-history-top flex items-center justify-between mb-4">
                             <div class="call-history-text roboto-medium text-xl text-[#111111]">
                                 <span><i class="fa-regular fa-clock"></i></span>
